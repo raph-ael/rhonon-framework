@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../dist/css/phonon.css">
+    <title>Pizza App</title>
+  </head>
+  <body>
+    <div class="app-pages">
+      <div class="app-page" data-page="home">
+        <nav class="navbar navbar-dark bg-primary">
+          <span class="navbar-brand mb-0 h1">Pizza App</span>
+        </nav>
+        <div class="p-3">
+          <p data-t="text: welcome"></p>
+
+          <div class="card">
+            <div class="card-body"><a class="d-block" href="#!/order/margherita">Margherita</a></div>
+          </div>
+          <div class="card">
+            <div class="card-body"><a class="d-block" href="#!/order/calzone">Cheese Calzone</a></div>
+          </div>
+          <div class="card">
+            <div class="card-body"><a class="d-block" href="#!/order/pesto">Pesto Pizza</a></div>
+          </div>
+          <div class="card">
+            <div class="card-body"><a class="d-block" href="#!/order/roma">Roma</a></div>
+          </div>
+          <div class="card">
+            <div class="card-body"><a class="d-block" href="#!/order/prosciutto">Prosciutto</a></div>
+          </div>
+          <div class="card">
+            <div class="card-body"><a class="d-block" href="#!/order/funghi">Funghi</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="app-page" data-page="order">
+        <nav class="navbar navbar-dark bg-primary">
+          <span class="navbar-brand mb-0 h1">
+            <button class="btn btn-sm btn-primary mr-2" data-navigate="home" data-pop-page="true" data-t="text: back"></button>
+            <span data-t="text: order">
+          </span>
+        </nav>
+        <div class="p-3">
+          <div class="order"></div>
+          <button class="btn btn-primary back-ok" data-navigate="home" data-pop-page="true" data-t="text: backOk"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../dist/js/phonon.js"></script>
+    <script src="../../dist/js/phonon-spa.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

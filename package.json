@@ -1,0 +1,70 @@
+{
+  "name": "Phonon-Framework",
+  "version": "2.0.0-alpha.1",
+  "description": "Phonon is an open source HTML, CSS and JavaScript agnostic framework that allows to create a website or a hybrid Web app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quark-dev/Phonon-Framework.git"
+  },
+  "scripts": {
+    "build": "node ./bin/build js components css",
+    "build:js": "node ./bin/build js",
+    "build:js-components": "node ./bin/build components",
+    "build:css": "node ./bin/build css",
+    "unit": "jest test/unit --no-watchman",
+    "unit:coverage": "jest test/unit --no-watchman --coverage",
+    "e2e": "testcafe chromium ./test/e2e/**",
+    "docs": "node ./bin/docs",
+    "lint": "node ./node_modules/eslint/bin/eslint.js --ext .js src test/unit test/e2e",
+    "release": "node ./bin/release",
+    "deploy": "node ./bin/deploy"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "author": "Quarkdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quark-dev/Phonon-Framework/issues"
+  },
+  "homepage": "https://github.com/quark-dev/Phonon-Framework",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.3",
+    "babel-core": "^7.0.0-bridge",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "bootstrap": "^4.2.1",
+    "clean-css": "^4.2.1",
+    "documentor": "^0.1.3",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0",
+    "node-sass": "^4.11.0",
+    "release": "^5.0.3",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-regenerator": "^0.6.0",
+    "sass-lint": "^1.12.1",
+    "testcafe": "^0.23.3",
+    "uglify-js": "^3.4.9"
+  },
+  "jest": {
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "src/js/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "testEnvironment": "node"
+  }
+}

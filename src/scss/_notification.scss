@@ -1,0 +1,84 @@
+
+// notifications must be above modals and off-canvas
+$zindex-notification: 1050;
+$notification-border-radius: 3px;
+
+$notification-sm: 100%;
+$notification-md: 300px;
+$notification-lg: 400px;
+
+.notification {
+  position: fixed;
+  transition: opacity 300ms ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: $zindex-notification;
+  width: $notification-sm;
+  height: auto;
+  color: $white;
+  background-color: $primary;
+
+  .notification-inner {
+    position: relative;
+    padding: $spacer;
+
+    .message {
+      display: inline-block;
+      margin-right: $spacer * 2;
+    }
+  }
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.hide {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  &.notification-top {
+    top: $spacer;
+  }
+
+  &.notification-right {
+    right: $spacer;
+  }
+
+  &.notification-bottom {
+    bottom: $spacer;
+  }
+
+  &.notification-left {
+    left: $spacer;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .notification-#{$color} {
+    background-color: theme-color-level($color);
+
+    @if $color == 'light' {
+      color: $dark;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .notification {
+    margin: $spacer 0; // add margin if several notifications are shown
+
+    @if $enable-rounded {
+      border-radius: $notification-border-radius;
+    }
+
+    width: $notification-md;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .notification {
+    width: $notification-lg;
+  }
+}

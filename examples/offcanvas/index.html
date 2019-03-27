@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../dist/css/phonon.css">
+    <title>Off-canvas</title>
+  </head>
+  <body>
+    <div class="d-inline-block d-lg-none">
+      <button class="btn btn-primary" data-toggle="offcanvas" data-target="#exampleOffCanvasLeft">Show floating left</button>
+      <button class="btn btn-primary" data-toggle="offcanvas" data-target="#exampleOffCanvasRight">Show floating right</button>
+    </div>
+    <div class="d-none d-lg-inline-block">
+      <button class="btn btn-primary" data-toggle="offcanvas" data-target="#exampleOffCanvasLeft">Show static left</button>
+      <button class="btn btn-primary" data-toggle="offcanvas" data-target="#exampleOffCanvasRight">Show static right</button>
+    </div>
+
+    <div class="offcanvas offcanvas-left" id="exampleOffCanvasLeft" role="navigation" aria-hidden="true" aria-labelledby="exampleOffCanvasLeftTitle">
+      <div class="offcanvas-inner">
+        <div class="offcanvas-content">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Title</h3>
+            <button type="button" class="close" data-dismiss="offcanvas" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Content</p>
+          </div>
+          <div class="offcanvas-footer">
+            <p>Footer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-right" id="exampleOffCanvasRight" role="navigation" aria-hidden="true" aria-labelledby="exampleOffCanvasRightTitle">
+      <div class="offcanvas-inner">
+        <div class="offcanvas-content">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Title</h3>
+            <button type="button" class="close" data-dismiss="offcanvas" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Content</p>
+          </div>
+          <div class="offcanvas-footer">
+            <p>Footer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../dist/js/phonon.js"></script>
+    <script src="../../dist/js/phonon-spa.js"></script>
+  </body>
+</html>

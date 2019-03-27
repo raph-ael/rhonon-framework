@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="./assets/icon-64.png" />
+    <link rel="stylesheet" href="phonon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/solid.css" integrity="sha384-osqezT+30O6N/vsMqwW8Ch6wKlMofqueuia2H7fePy42uC05rm1G+BUPSd2iBSJL" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css" integrity="sha384-BzCy2fixOYd0HObpx3GMefNqdbA7Qjcc91RgYeDjrHTIEXqiF00jKvgQG0+zY/7I" crossorigin="anonymous">
+    <title>Phonon v2 · A light weight, flexible and scalable responsive front-end framework</title>
+
+    <style>
+      html, body {
+        height: 100%;
+        min-height: 100% !important;
+      }
+
+      .chevron {
+        animation-duration: 3200ms;
+        animation-iteration-count: infinite;
+        animation-name: chevron;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes chevron {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+
+        50% {
+          transform: translate3d(0, -15px, 0);
+        }
+
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .story {
+        padding-top: 115px;
+        padding-bottom: 115px;
+      }
+
+      .story h2 {
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+
+      .story .headline {
+        text-transform: uppercase;
+      }
+
+      .fas {
+        text-align: center;
+        display: block;
+        font-size: 9em;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/icon.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Phonon
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./docs/latest">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/quark-dev/Phonon-Framework/tree/master">Github</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="h-100">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row align-items-center">
+          <div class="col-sm-8">
+            <h1 class="mb-5">Phonon</h1>
+            <h2><b>Responsive</b> <b>front-end</b> framework with a focus on simplicity and flexibility</h2>
+            <hr />
+            <h3>
+              Phonon is an open source HTML, CSS and JavaScript <b>agnostic</b> framework
+              for creating <b>websites</b> and <b>hybrid mobile apps</b>.
+            </h3>
+
+            <div class="d-block mt-5">
+              <a href="./docs/latest/#0_getting-started" class="btn btn-lg btn-primary">Getting started</a>
+              <button class="btn btn-lg btn-outline-primary" data-toggle="modal" data-target="#downloadModal">Download</button>
+            </div>
+          </div>
+          <div class="col-sm-4 d-none d-sm-block">
+            <img src="./assets/icon.svg" width="100%" alt="">
+            <div class="commit clearfix">
+              <div class="float-left sha"></div>
+              <div class="float-right date"></div>
+            </div>
+            <div class="release clearfix">
+              <div class="float-left tag"></div>
+              <div class="float-right date"></div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="d-block mt-5 text-center">
+              <a class="text-primary" href="#about" style="text-decoration:none">
+                <span class="fas fa-chevron-down chevron" style="font-size:3em"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="story bg-light" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h1>About</h1>
+
+              <p class="text-justify">
+                Phonon is a front-end framework made with <strong>mobile and desktop</strong> in mind.
+                It offers clear and neutral components that integrate best practices
+                and ideas coming from well-known design styles.
+              </p>
+
+              <p class="text-justify">
+                Originally, Phonon has been created for building
+                <strong>hybrid apps with Apache Cordova</strong> by using <strong>Web technologies
+                such as HTML, CSS and JavaScript</strong>.
+                At that time, the main focus was mobile. The framework still helps to trigger page events and perform tasks related to app pages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Phonon v2</h2>
+              <h3 class="headline text-primary">v2.0.0-alpha.1 is here!</h3>
+
+              <p class="text-justify">
+                After more than 250 commits after the latest v1 commit,
+                we are happy to announce a new experience starting with Phonon 2!<br />
+                The framework has been completely rewritten to make substantive improvements
+                and making full use of ECMAScript 6 features (ES6).
+              </p>
+
+              <p class="text-justify">
+                <a class="btn btn-outline-primary" href="./docs/latest/#0_getting-started/3_migration">Coming from v1.x? Read the migration guide</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Fast and easy to use</h2>
+              <h3 class="headline text-primary">Rich Docs & JavaScript or HTML setup</h3>
+
+              <p class="text-justify">
+                The documentation is filled with examples and shows the visual result of the components.
+              </p>
+
+              <p class="text-justify">
+                <b>JavaScript approach:</b> Many components such as modals and notifications don't require any HTML markup. Use the JavaScript API directly to display components.
+              </p>
+              <p class="text-justify">
+                <b>HTML approach:</b> Most component options are read directly from the HTML markup thanks to data-attributes.
+                This eliminates the need to write unnecessary JavaScript configuration elsewhere in your code.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <span class="fas fa-stopwatch"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>User interface framework</h2>
+              <h3 class="headline text-primary">Frontend components</h3>
+
+              <p class="text-justify">
+                The UI components are designed to support use cases on different device formats
+                such as desktop, tablets and smartphones.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <span class="fas fa-laptop"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Light weight framework</h2>
+              <h3 class="headline text-primary">CommonJS components</h3>
+
+              <p class="text-justify">
+                Include the components used in your project in ES6+ in order to reduce the size or import the minified files.
+                For more information, please read <a href="./docs/latest/#0_getting-started/1_custom-build">Custom builds</a>.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <span class="fas fa-feather-alt"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Free and open source code</h2>
+              <h3 class="headline text-primary">Under MIT License</h3>
+
+              <p class="text-justify">
+                The MIT License is a permissive free software license.
+                Phonon is completely open source.
+                Feel free to use Phonon for your free and paid projects.
+              </p>
+            </div>
+            <div class="col-sm-4">
+                <span class="fas fa-share-alt"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Library agnostic</h2>
+              <h3 class="headline text-primary">No dependency</h3>
+
+              <p>Phonon does not use and does not depend on any JavaScript third party libraries.</p>
+              <p class="text-justify">
+                Choose the right framework according to your needs and your project's size
+                such as
+                <a href="https://reactjs.org" target="_blank">React</a>,
+                <a href="https://angular.io" target="_blank">Angular</a>,
+                <a href="https://vuejs.org" target="_blank">Vue.js</a>,
+                <a href="https://jquery.com" target="_blank">jQuery</a>,
+                <a href="https://zeptojs.com" target="_blank">Zepto.js</a>,
+                <a href="https://riot.js.org" target="_blank">Riot.js</a>
+                or work with pure JavaScript.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <span class="fas fa-shapes"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Site framework</h2>
+              <h3 class="headline text-primary">From prototyping to production</h3>
+
+              <p class="text-justify">
+                Use Phonon as a prototyping website and apps toolkit to show your drafts and mockups
+                or build amazing websites.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <span class="fas fa-sitemap"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Hybrid app framework</h2>
+              <h3 class="headline text-primary">Painless SPA</h3>
+
+              <p class="text-justify">
+                Also known as single page applications, Phonon SPA (phonon-spa.js) comes with
+                simple modules such as Pager and I18n.
+              </p>
+              <p>
+                <ul class="pl-3">
+                  <li class="text-justify mb-3">
+                    <b>Pager:</b> is a lightweight <b>page controller</b> and <b>client-side router</b> to organize <b>navigation between pages</b>, read hash parameters
+                    and listen to <b>page events</b> such as
+                    <code>show</code>, <code>shown</code>, <code>hide</code>, <code>hidden</code> and <code>hash</code>.
+                    It also allows you to define <b>page templates</b> and <b>block navigation to a page</b>.
+                  </li>
+                  <li class="text-justify">
+                    <b>I18n:</b> contains texts in different languages and
+                    display the text in the active language in views.
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <span style="font-size: 8rem" class="fas d-inline-block fa-mobile-alt"></span>
+              <span style="font-size: 8rem" class="fas d-inline-block fa-tablet-alt"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <h2>Contribute, share or donate</h2>
+
+              <p class="text-justify">
+                As a 100% free open-source project, developer participation is encouraged, as much or little as possible.
+                Fork it, open issues and star the project!
+              </p>
+
+              <iframe src="https://ghbtns.com/github-btn.html?user=quark-dev&repo=Phonon-Framework&type=star&count=false&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+              <iframe src="https://ghbtns.com/github-btn.html?user=quark-dev&repo=Phonon-Framework&type=fork&count=false&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+
+              <p class="text-justify mt-3">
+                If this framework saved your day and you wish to support future developments
+                you may consider sending some funds via PayPal.
+              </p>
+
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="FR8F53JKB8P32">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </div>
+            <div class="col-sm-4 text-center">
+              <span style="font-size: 8rem" class="fas d-inline-block fa-code-branch"></span>
+              <span style="font-size: 8rem" class="fas d-inline-block fa-donate"></span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+    <div class="modal" id="downloadModal" tabindex="-1" role="modal">
+      <div class="modal-inner" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Download</h3>
+          </div>
+          <div class="modal-body">
+            <p>
+              The installation can take place in several ways:
+            </p>
+            <p>
+              <ul>
+                <li>Download the latest release and use dist files.</li>
+                <li>Clone the repo: <code>git clone https://github.com/quark-dev/Phonon-Framework.git</code></li>
+                <li>Install with npm: <code>npm install phonon</code>.</li>
+                <li>Install with yarn: <code>yarn add phonon</code>.</li>
+                <li>Install with Bower: <code>bower install phonon</code>.</li>
+                <li>Use CDNJS.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-group float-right" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="phonon.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="github.js"></script>
+    <script>
+      getLastCommit(function (data) {
+        const link = `https://github.com/quark-dev/Phonon-Framework/commit/${data.sha}`;
+        document.querySelector('.commit .sha').innerHTML = `Last commit ` +
+          `<a href="${link}" target="_blank">${data.sha.substring(0, 7)}</a>`;
+
+        document.querySelector('.commit .date').innerHTML = data.date;
+      });
+
+      getLastRelease(function (data) {
+        const link = `https://github.com/quark-dev/Phonon-Framework/releases/tag/${data.tag}`;
+        document.querySelector('.release .tag').innerHTML = `Currently ` +
+          `<a href="${link}" target="_blank">${data.tag}</a>`;
+
+        document.querySelector('.release .date').innerHTML = data.date;
+      });
+
+    </script>
+  </body>
+</html>
